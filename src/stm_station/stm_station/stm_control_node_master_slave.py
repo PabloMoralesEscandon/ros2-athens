@@ -102,7 +102,6 @@ class STMControlNode(Node):
         # TODO: Update master_position with value from msg
         self.master_position = STMState()
         self.master_position = msg.motor_encoder
-        #self.speed = (self.slave_position - self.master_position) * self.kp
 
     def slave_stm_state_callback(self, msg):
         self.slave_position = STMState()
@@ -153,6 +152,7 @@ class STMControlNode(Node):
         # TODO: Initialize a STMControl message that will be published to the slave node
         control_msg = STMControl()
         # Do things if control type is 0 (Stop) or 1 (Position Control)
+        self.speed = (self.master_position - self.slave_position) * self.kp
         if (self.control_type == 1 or self.control_type == 0 or self.control_type == 2):
             # TODO: Fill in the control message based on the control type and control constant received from the service request
             # and the slave setpoint position based on the master position received from the subscriber

@@ -4,6 +4,5 @@
 /d1_1
 /install
 /log
-/motor_ex
-/motor_ex_2
-/simulacion
+*.mcap
+*.yaml

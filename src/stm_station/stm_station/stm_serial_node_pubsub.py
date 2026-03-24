@@ -114,7 +114,7 @@ class SerialPubSubNode(Node):
             # TODO: Format the control data as a comma-separated string and send it to the serial device
             # format: {control_type, goal_position, Kp, PWM}
             # control_type: 0 = Stop, 1 = Position Control (Close Loop), 2 = PWM Control (Open Loop)
-            control_data = f"{{{msg.control_type}, {msg.setpoint}, {msg.kp}, {msg.pwm}}}"
+            control_data = f"{{{msg.control_type}, {msg.setpoint}, {msg.kp}, {msg.pwm}}}\n"
             #control_data = f"{{{1}, {500}, {0.5}, {msg.pwm}}}"
             # TODO: Encode the control data as UTF-8 and write it to the serial port 
             self.serial_port.write(control_data.encode("utf_8"))

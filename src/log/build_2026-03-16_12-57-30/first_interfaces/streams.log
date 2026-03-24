@@ -1,8 +1,0 @@
-[0.063s] Invoking command in '/home/athens/ros2-athens_ws/src/build/first_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/athens/ros2-athens_ws/install/first_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/athens/ros2-athens_ws/src/first_interfaces -DCMAKE_INSTALL_PREFIX=/home/athens/ros2-athens_ws/src/install/first_interfaces
-[0.077s] [31mCMake Error at CMakeLists.txt:11:
-[0.077s]   Parse error.  Expected a command name, got unquoted argument with text
-[0.077s]   "​".
-[0.078s] 
-[0.078s] [0m
-[0.080s] -- Configuring incomplete, errors occurred!
-[0.813s] Invoked command in '/home/athens/ros2-athens_ws/src/build/first_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/athens/ros2-athens_ws/install/first_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/athens/ros2-athens_ws/src/first_interfaces -DCMAKE_INSTALL_PREFIX=/home/athens/ros2-athens_ws/src/install/first_interfaces
