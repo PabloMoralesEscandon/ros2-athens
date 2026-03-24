@@ -1,0 +1,2 @@
+float64 cord_x
+float64 cord_y
